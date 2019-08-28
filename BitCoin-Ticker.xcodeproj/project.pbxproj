@@ -12,9 +12,11 @@
 		4F7AF526231084F000CC213E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F7AF524231084F000CC213E /* Main.storyboard */; };
 		4F7AF5282310850100CC213E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F7AF5272310850100CC213E /* Assets.xcassets */; };
 		4F7AF52B2310850100CC213E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4F7AF5292310850100CC213E /* LaunchScreen.storyboard */; };
+		60B0B1558D10BA75CC2A4B3B /* Pods_BitCoin_Ticker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C391502BF8223E1C6F39A3 /* Pods_BitCoin_Ticker.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		12C391502BF8223E1C6F39A3 /* Pods_BitCoin_Ticker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BitCoin_Ticker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7AF51D231084F000CC213E /* BitCoin-Ticker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BitCoin-Ticker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4F7AF520231084F000CC213E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4F7AF522231084F000CC213E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +24,8 @@
 		4F7AF5272310850100CC213E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4F7AF52A2310850100CC213E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4F7AF52C2310850100CC213E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7089A402D4785DE72921087 /* Pods-BitCoin-Ticker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitCoin-Ticker.debug.xcconfig"; path = "Target Support Files/Pods-BitCoin-Ticker/Pods-BitCoin-Ticker.debug.xcconfig"; sourceTree = "<group>"; };
+		E4AB08DE30148423F0D4FEE5 /* Pods-BitCoin-Ticker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitCoin-Ticker.release.xcconfig"; path = "Target Support Files/Pods-BitCoin-Ticker/Pods-BitCoin-Ticker.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +33,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60B0B1558D10BA75CC2A4B3B /* Pods_BitCoin_Ticker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D96DBEB97AEF5D8812DA458 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7089A402D4785DE72921087 /* Pods-BitCoin-Ticker.debug.xcconfig */,
+				E4AB08DE30148423F0D4FEE5 /* Pods-BitCoin-Ticker.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		0DC36B7A415950F787D54AB4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12C391502BF8223E1C6F39A3 /* Pods_BitCoin_Ticker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4F7AF514231084F000CC213E = {
 			isa = PBXGroup;
 			children = (
 				4F7AF51F231084F000CC213E /* BitCoin-Ticker */,
 				4F7AF51E231084F000CC213E /* Products */,
+				0D96DBEB97AEF5D8812DA458 /* Pods */,
+				0DC36B7A415950F787D54AB4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,9 +96,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4F7AF52F2310850100CC213E /* Build configuration list for PBXNativeTarget "BitCoin-Ticker" */;
 			buildPhases = (
+				D3C8D14BBF2B277DCF68D1EC /* [CP] Check Pods Manifest.lock */,
 				4F7AF519231084F000CC213E /* Sources */,
 				4F7AF51A231084F000CC213E /* Frameworks */,
 				4F7AF51B231084F000CC213E /* Resources */,
+				D64305D007B793083EB717EB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -129,6 +156,55 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		D3C8D14BBF2B277DCF68D1EC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitCoin-Ticker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D64305D007B793083EB717EB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BitCoin-Ticker/Pods-BitCoin-Ticker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitCoin-Ticker/Pods-BitCoin-Ticker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4F7AF519231084F000CC213E /* Sources */ = {
@@ -280,37 +356,41 @@
 		};
 		4F7AF5302310850100CC213E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7089A402D4785DE72921087 /* Pods-BitCoin-Ticker.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EQUFBY4KEL;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 893E3T5472;
 				INFOPLIST_FILE = "BitCoin-Ticker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.5nance.test.BitCoin-Ticker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.5nance.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TestDeveloperCert;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		4F7AF5312310850100CC213E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4AB08DE30148423F0D4FEE5 /* Pods-BitCoin-Ticker.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = EQUFBY4KEL;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 893E3T5472;
 				INFOPLIST_FILE = "BitCoin-Ticker/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.5nance.test.BitCoin-Ticker";
+				PRODUCT_BUNDLE_IDENTIFIER = com.5nance.test;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = TestDeveloperCert;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
